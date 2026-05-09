@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de projet - Freenet Technology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <img src="assets/images/freenet.jpg" alt="Logo Freenet Technologie">
+    <h1 class="site-title">FREENET TECHNOLOGY</h1>
+    <nav>
+        <span class="menu-toggle">&#9776;</span>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="testimonials.html">Témoignages</a></li>
+            <li><a href="request.html">Demande</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Faire une demande de projet ou service</h2>
+    <p>Remplissez ce formulaire pour nous soumettre votre demande. Nous vous répondrons rapidement.</p>
+
+    <form id="requestForm" action="../backfre/controllers/RequestController.php" method="POST" class="contact-form">
+        <input type="hidden" name="action" value="add">
+
+        <label for="name">Votre Nom</label>
+        <input type="text" id="name" name="user_name" placeholder="Votre nom complet" required>
+
+        <label for="email">Votre Email</label>
+        <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
+
+        <label for="service">Type de service</label>
+        <select id="service" name="service_type" required>
+            <option value="">-- Sélectionnez un service --</option>
+            <option value="logo">Création de logos</option>
+            <option value="invitation">Cartes d'invitation</option>
+            <option value="businesscard">Cartes de visite</option>
+            <option value="cv">Rédaction de CV</option>
+            <option value="social">Visuels pour réseaux sociaux</option>
+            <option value="flyer">Flyers d'événements</option>
+            <option value="affiche">Affiche publicitaire</option>
+            <option value="video">Montage vidéo professionnel</option>
+            <option value="website">Création de site Web</option>
+            <option value="ecommerce">Création de sites E-commerce</option>
+            <option value="app">Développement d'applications</option>
+            <option value="wifi">Installation wifi zone et caméra de surveillance</option>
+        </select>
+
+        <label for="details">Détails de votre demande</label>
+        <textarea id="details" name="details" placeholder="Décrivez votre projet ou besoin..." required></textarea>
+
+        <button type="submit">Envoyer la demande</button>
+    </form>
+</section>
+
+<footer>
+    <p>Contactez-nous :</p>
+    <div class="social-icons">
+        <a href="https://maps.app.goo.gl/qddw3uHV6LBw217aA" target="_blank" title="Localisation">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+        <a href="mailto:freenet@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/22890553249" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://freenet.facebook.com" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://oficielfreenet.tiktok.com" target="_blank" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://titifreenet.instagram.com" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://officefreenet.com" target="_blank" title="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    <ul class="footer-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html">Témoignages</a></li>
+        <li><a href="request.html">Demande</a></li>
+    </ul>
+    <p>&copy; 2026 Freenet Technology - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>

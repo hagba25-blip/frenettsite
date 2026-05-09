@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Freenet Technology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <img src="assets/images/freenet.jpg" alt="Logo Freenet Technologie">
+    <h1 class="site-title">FREENET TECHNOLOGY</h1>
+    <nav>
+        <span class="menu-toggle">&#9776;</span>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="testimonials.html">Témoignages</a></li>
+            <li><a href="request.html">Demande</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Contactez-nous</h2>
+    <p>Vous avez une question ou un projet ? Envoyez-nous un message, nous vous répondrons rapidement.</p>
+
+    <form id="contactForm" action="../backend/controllers/MessageController.php" method="POST" class="contact-form">
+        <input type="hidden" name="action" value="add">
+
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+
+        <label for="email">Votre Email</label>
+        <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+<footer>
+    <p>Contactez-nous :</p>
+    <div class="social-icons">
+        <a href="https://maps.app.goo.gl/qddw3uHV6LBw217aA" target="_blank" title="Localisation">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+        <a href="mailto:freenet@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/22890553249" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://freenet.facebook.com" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://oficielfreenet.tiktok.com" target="_blank" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://titifreenet.instagram.com" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://officefreenet.com" target="_blank" title="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    <ul class="footer-nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="testimonials.html">Témoignages</a></li>
+        <li><a href="request.html">Demande</a></li>
+    </ul>
+    <p>&copy; 2026 Freenet Technology - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
