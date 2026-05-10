@@ -114,4 +114,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+// ====== COMPTEUR ANIMÉ DES STATISTIQUES ======
+    const statNumbers = document.querySelectorAll(".stat-number");
+ 
+    const animateCounter = (el) => {
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1800;
+        const step = Math.ceil(target / (duration / 16));
+        let current = 0;
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= target) {
+                el.textContent = target + (target >= 10 ? "+" : "");
+                clearInterval(timer);
+            } else {
+                el.textContent = current;
+            }
+        }, 16);
+    };
+ 
+    if (statNumbers.length > 0) {
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        statNumbers.forEach(n => counterObserver.observe(n));
+    }
+ 
 });
+ 
