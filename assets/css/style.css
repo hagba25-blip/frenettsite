@@ -1077,14 +1077,14 @@ footer::before {
 }
 
 .offres-section {
-  background: linear-gradient(to bottom, #0d47a1, #ffffff);
+  background: linear-gradient(to bottom, #000811, #ffffff);
   padding: 60px 20px;
   text-align: center;
 }
 
 .section-title {
   font-size: 2.5em;
-  color: #0d47a1;
+  color: #000811;
   margin-bottom: 40px;
   font-weight: bold;
 }
@@ -1112,13 +1112,13 @@ footer::before {
 
 .offre-card .icon {
   font-size: 3em;
-  color: #0d47a1;
+  color: #000811;
   margin-bottom: 15px;
 }
 
 .offre-card h3 {
   font-size: 1.5em;
-  color: #0d47a1;
+  color: #000811;
   margin-bottom: 15px;
 }
 
@@ -1131,7 +1131,7 @@ footer::before {
 .offre-card .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #0d47a1;
+  background: #000811;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
@@ -1139,7 +1139,7 @@ footer::before {
 }
 
 .offre-card .btn:hover {
-  background: #1565c0;
+  background: #000811;
 }
 /* ✅ Adaptation mobile */
 @media (max-width: 768px) {
