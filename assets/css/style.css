@@ -4,6 +4,13 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+*{
+    font-family:
+    "Arial Rounded MT Bold",
+    "Helvetica Rounded",
+    Arial,
+    sans-serif;
+}
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -980,5 +987,66 @@ footer::before {
     .solution-card { padding: 20px 18px; }
     .solutions-banner-inner { padding: 24px 20px; flex-direction: column; text-align: center; }
     .solutions-banner-inner > div { min-width: auto; }
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.contact-info h2 {
+  color: #000811;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.contact-info i {
+  color: #FF6600;
+  margin-right: 8px;
+}
+
+/* Map */
+.map {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.map h2 {
+  margin-bottom: 20px;
+  color: #FF6600;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+  .contact {
+    flex-direction: column;
+  }
 }
  
