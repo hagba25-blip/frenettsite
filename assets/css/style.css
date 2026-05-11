@@ -1075,4 +1075,133 @@ footer::before {
     height: 250px;
   }
 }
- 
+
+.offres-section {
+  background: linear-gradient(to bottom, #0d47a1, #ffffff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: #0d47a1;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.offres-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offre-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offre-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.offre-card .icon {
+  font-size: 3em;
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.offre-card h3 {
+  font-size: 1.5em;
+  color: #0d47a1;
+  margin-bottom: 15px;
+}
+
+.offre-card p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.offre-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0d47a1;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.offre-card .btn:hover {
+  background: #1565c0;
+}
+/* ✅ Adaptation mobile */
+@media (max-width: 768px) {
+  .offres-section {
+    padding: 40px 10px;
+  }
+
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .offres-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .offre-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .offre-card .icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .offre-card h3 {
+    font-size: 1.3em;
+  }
+
+  .offre-card p {
+    font-size: 0.95em;
+  }
+
+  .offre-card .btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+/* ✅ Très petits écrans (téléphones < 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8em;
+  }
+
+  .offre-card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .offre-card .icon {
+    font-size: 2em;
+  }
+
+  .offre-card h3 {
+    font-size: 1.2em;
+  }
+
+  .offre-card p {
+    font-size: 0.9em;
+  }
+}
