@@ -32,7 +32,7 @@
     <h2>Contactez-nous</h2>
     <p>Vous avez une question ou un projet ? Envoyez-nous un message, nous vous répondrons rapidement.</p>
 
-    <form id="contactForm" action="../backend/controllers/MessageController.php" method="POST" class="contact-form">
+    <form id="contactForm" action="https://formspree.io/f/xbdwwzjy" method="POST" class="contact-form">
         <input type="hidden" name="action" value="add">
 
         <label for="subject">Sujet</label>
@@ -40,12 +40,18 @@
 
         <label for="email">Votre Email</label>
         <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
-        
-        <label for="email">votre numéros de téléphone</label>
-        <input type="text" name="phone" placeholder="Votre numéro de téléphone (+22899999999)" required>
+
+        <label for="phone">votre numéros de téléphone</label>
+        <input type="text" name="phone" placeholder="+22899999999)" required>
 
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+
+        <!-- Champ caché pour redirection après envoi -->
+        <input type="hidden" name="_next" value="https://infoteche.vercel.app/success.html">
+
+        <!-- Champ anti-spam -->
+        <input type="text" name="_gotcha" style="display:none">
 
         <button type="submit">Envoyer</button>
     </form>

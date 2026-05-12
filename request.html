@@ -32,7 +32,7 @@
     <h2>Faire une demande de projet ou service</h2>
     <p>Remplissez ce formulaire pour nous soumettre votre demande. Nous vous répondrons rapidement.</p>
 
-    <form id="requestForm" action="../backfre/controllers/RequestController.php" method="POST" class="contact-form">
+    <form id="requestForm" action="https://formspree.io/f/xbdwwzjy" method="POST" class="contact-form">
         <input type="hidden" name="action" value="add">
 
         <label for="name">Votre Nom</label>
@@ -64,6 +64,12 @@
 
         <label for="details">Détails de votre demande</label>
         <textarea id="details" name="details" placeholder="Décrivez votre projet ou besoin..." required></textarea>
+
+        <!-- Champ caché pour redirection après envoi -->
+        <input type="hidden" name="_next" value="suseful.html">
+
+        <!-- Champ anti-spam -->
+        <input type="text" name="_gotcha" style="display:none">
 
         <button type="submit">Envoyer la demande</button>
     </form>

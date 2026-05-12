@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Succès - Message envoyé</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0d47a1, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .success-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .success-icon {
+      font-size: 4em;
+      color: #0d47a1;
+      margin-bottom: 20px;
+    }
+
+    .success-container h1 {
+      color: #0d47a1;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    .success-container p {
+      color: #333;
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #0d47a1;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1565c0;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-container">
+    <div class="success-icon">✅</div>
+    <h1>Merci !</h1>
+    <p>Votre message a bien été envoyé. Nous vous répondrons rapidement.</p>
+    <a href="contact.html" class="btn">⬅ Retour à l’accueil</a>
+  </div>
+</body>
+</html>
